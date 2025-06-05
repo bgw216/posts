@@ -7,7 +7,7 @@ const pageSize = 10;
 const isProd = process.env.NODE_ENV === "production";
 
 export default defineConfig({
-  title: "Bingo的知识库",
+  title: "Bingo的备忘库",
   base: "/posts/",
   cacheDir: "./node_modules/vitepress_cache",
   description: "聚沙成塔，智识自生",
