@@ -8,7 +8,7 @@ const isProd = process.env.NODE_ENV === "production";
 
 export default defineConfig({
   title: "Bingo的备忘库",
-  base: "/posts/",
+  base: isProd ? "/posts/" : "/", // 生产环境下的基础路径
   cacheDir: "./node_modules/vitepress_cache",
   description: "聚沙成塔，智识自生",
   ignoreDeadLinks: true,
